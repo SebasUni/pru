@@ -17,7 +17,7 @@
             enter you name: 
          <input type="text" name="name" value="" />
         
-          enter you age  :
+         enter your year of birth :
          <input type="t" name="fechanacimiento" value="" />
          <input type="submit" value="enviar" /> 
       
