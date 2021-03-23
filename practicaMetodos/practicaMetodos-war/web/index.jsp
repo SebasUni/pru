@@ -18,7 +18,7 @@
          <input type="text" name="name" value="" />
         
           enter you age  :
-         <input type="text" name="fechanacimiento" value="" />
+         <input type="t" name="fechanacimiento" value="" />
          <input type="submit" value="enviar" /> 
       
         </form>
