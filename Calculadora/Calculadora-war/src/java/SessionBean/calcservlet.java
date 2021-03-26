@@ -46,7 +46,7 @@ public class calcservlet extends HttpServlet {
              double b =Double.parseDouble(request.getParameter("t2"));
              String op = request.getParameter("operacion");
              if (op.equals("+")) {
-                 if(calcbean.resta(a, b)%2==0){
+                 if(calcbean.resta(a, b)%1==0){
                          double respuesta= calcbean.suma(a, b);
                          int respuesta1=(int)respuesta;
                           out.println("<h1>suma= "  +respuesta1+ "</h1>"); 
@@ -57,7 +57,7 @@ public class calcservlet extends HttpServlet {
                    
             }else{
                  if (op.equals("-")) {
-                     if(calcbean.resta(a, b)%2==0){
+                     if(calcbean.resta(a, b)%1==0){
                          double respuesta= calcbean.resta(a, b);
                          int respuesta1=(int)respuesta;
                           out.println("<h1>resta= "  +respuesta1+ "</h1>"); 
@@ -68,7 +68,7 @@ public class calcservlet extends HttpServlet {
                    
                  }else
                      if (op.equals("*")) {
-                    if(calcbean.resta(a, b)%2==0){
+                    if(calcbean.resta(a, b)%1==0){
                          double respuesta= calcbean.multiplicacion(a, b);
                          int respuesta1=(int)respuesta;
                           out.println("<h1>mutiplicacion= "  +respuesta1+ "</h1>"); 
@@ -79,7 +79,7 @@ public class calcservlet extends HttpServlet {
                    
                  }else
                          if (op.equals("/")) {
-                     if(calcbean.resta(a, b)%2==0){
+                     if(calcbean.resta(a, b)%1==0){
                          double respuesta= calcbean.division(a, b);
                          int respuesta1=(int)respuesta;
                           out.println("<h1>division= "  +respuesta1+ "</h1>"); 
@@ -89,7 +89,7 @@ public class calcservlet extends HttpServlet {
                      }
                    
                  }else    if (op.equals("%")) {
-                     if(calcbean.resta(a, b)%2==0){
+                     if(calcbean.resta(a, b)%1==0){
                          double respuesta= calcbean.modulo(a, b);
                          int respuesta1=(int)respuesta;
                           out.println("<h1>modulo= "  +respuesta1+ "</h1>"); 
