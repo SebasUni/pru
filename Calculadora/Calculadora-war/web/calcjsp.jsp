@@ -13,16 +13,16 @@
     </head>
     <body>
         <form action="calcservlet" method="POST">
-            numero 1:<input type="text" name="t1">
+            <input type="text" name="t1">
                <select name="operacion" id="cars">
           <option value="+">+</option>
           <option value="-">-</option>
           <option value="*">*</option>
           <option value="/">/</option>
-          <option value="%">/</option>
-          <option value="^">/</option>
+          <option value="%">%</option>
+          <option value="^">^</option>
         </select>
-            numero 2:<input type="text" name="t2">
+            <input type="text" name="t2">
             <input type="submit" value="add">
      
         </form> 
