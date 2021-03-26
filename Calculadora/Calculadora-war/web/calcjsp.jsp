@@ -14,7 +14,7 @@
     <body>
         <form action="calcservlet" method="POST">
             <input type="text" name="t1">
-               <select name="operacion" id="cars">
+               <select name="operacion" id="oper">
           <option value="+">+</option>
           <option value="-">-</option>
           <option value="*">*</option>
