@@ -14,10 +14,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-/**
- *
- * @author Joseph
- */
+
 @Entity
 @Table
 @NamedQueries({@NamedQuery(name="Student.getAll",query="SELECT e FROM Student e")})

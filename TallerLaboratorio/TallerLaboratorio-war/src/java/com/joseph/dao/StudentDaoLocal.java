@@ -8,10 +8,7 @@ import com.joseph.model.Student;
 import java.util.List;
 import javax.ejb.Local;
 
-/**
- *
- * @author Joseph
- */
+
 @Local
 public interface StudentDaoLocal {
 

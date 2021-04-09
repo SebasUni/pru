@@ -10,10 +10,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-/**
- *
- * @author Joseph
- */
+
 @Stateless
 public class StudentDao implements StudentDaoLocal {
     @PersistenceContext
