@@ -64,12 +64,23 @@ public class Cursos implements Serializable{
         this.semestre = yearLevel;
     }
 
-    public Cursos(int studentId, String firstname, String lastname, int yearLevel) {
-        this.idcodigo = studentId;
-        this.nombre = firstname;
-        this.numcreditos = lastname;
-        this.semestre = yearLevel;
+    public int getNumestudiante() {
+        return numestudiante;
     }
+
+    public void setNumestudiante(int numestudiante) {
+        this.numestudiante = numestudiante;
+    }
+
+    public Cursos(int idcodigo, String nombre, String numcreditos, int semestre, int numestudiante) {
+        this.idcodigo = idcodigo;
+        this.nombre = nombre;
+        this.numcreditos = numcreditos;
+        this.semestre = semestre;
+        this.numestudiante = numestudiante;
+    }
+
+  
     
     public Cursos(){}
 }
