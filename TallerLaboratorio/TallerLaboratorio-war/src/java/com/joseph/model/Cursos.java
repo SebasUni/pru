@@ -17,57 +17,59 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-@NamedQueries({@NamedQuery(name="Student.getAll",query="SELECT e FROM Student e")})
-public class Student implements Serializable{
+@NamedQueries({@NamedQuery(name="Cursos.getAll",query="SELECT e FROM Cursos e")})
+public class Cursos implements Serializable{
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     @Column
-    private int studentId;
+    private int idcodigo;
     @Column
-    private String firstname;
+    private String nombre;
     @Column
-    private String lastname;
+    private String numcreditos;
     @Column
-    private int yearLevel;
+    private int semestre;
+    @Column
+    private int numestudiante;
 
     public int getStudentId() {
-        return studentId;   
+        return idcodigo;   
     }
 
     public void setStudentId(int studentId) {
-        this.studentId = studentId;
+        this.idcodigo = studentId;
     }
 
     public String getFirstname() {
-        return firstname;
+        return nombre;
     }
 
     public void setFirstname(String firstname) {
-        this.firstname = firstname;
+        this.nombre = firstname;
     }
 
     public String getLastname() {
-        return lastname;
+        return numcreditos;
     }
 
     public void setLastname(String lastname) {
-        this.lastname = lastname;
+        this.numcreditos = lastname;
     }
 
     public int getYearLevel() {
-        return yearLevel;
+        return semestre;
     }
 
     public void setYearLevel(int yearLevel) {
-        this.yearLevel = yearLevel;
+        this.semestre = yearLevel;
     }
 
-    public Student(int studentId, String firstname, String lastname, int yearLevel) {
-        this.studentId = studentId;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.yearLevel = yearLevel;
+    public Cursos(int studentId, String firstname, String lastname, int yearLevel) {
+        this.idcodigo = studentId;
+        this.nombre = firstname;
+        this.numcreditos = lastname;
+        this.semestre = yearLevel;
     }
     
-    public Student(){}
+    public Cursos(){}
 }

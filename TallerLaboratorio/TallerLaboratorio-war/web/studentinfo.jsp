@@ -33,6 +33,19 @@
                     <td><input type="text" name="yearLevel" value="${student.yearLevel}" /></td>
                 </tr>
                 <tr>
+                    <td>ID Curso</td>
+                    <td><input type="text" name="curso" value="${cursos.idcodigo}" /></td>
+                </tr>
+                 </tr>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" name="curso" value="${cursos.nombre}" /></td>
+                </tr>
+                <tr>
+                    <td>Numero de estudiante</td>
+                    <td><input type="text" name="curso" value="${cursos.numestudiante}" /></td>
+                </tr>
+                <tr>
                     <td colspan="2">
                         <input type="submit" name="action" value="Add" />
                         <input type="submit" name="action" value="Edit" />
@@ -56,6 +69,23 @@
                     <td>${stud.yearLevel}</td>
                 </tr>
             </c:forEach>
+                
+        </table>  
+         <table border="1">
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Numero de estudiantes</th>
+            <th>Semestre</th>
+           
+            <c:forEach items="${allCursos}" var="curs">
+                <tr>
+                    <td>${curs.idcodigo}</td>
+                    <td>${curs.nombre}</td>
+                    <td>${curs.numestudiante}</td>
+                   
+                </tr>
+            </c:forEach>
+                
         </table>  
     </body>
 </html>
